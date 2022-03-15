@@ -123,16 +123,40 @@
 }
 
 
-
-
+/* 10 */
 .ex-10-icon {
     font-size: 60px;
+    transform: rotateZ(0deg);
+    animation: spin-10 2s linear infinite;
 }
+
+@keyframes spin-10 {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+/* 11 */
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation: spin-11 2s linear;
+}
+
+@keyframes spin-11 {
+    75% {
+        transform: rotateZ(270deg);
+    }
+    
+}
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
+    left: 200px;
     display: block;
     width: 200px;
     height: 70px;
@@ -144,19 +168,101 @@
     text-align: center;
     text-decoration: none;
 }
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
-    top: -10px;
+    top: -20px;
     left: 10%;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    /* border: 1px solid red; */
 }
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
-    bottom: -10px;
+    bottom: -20px;
     right: 20%;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    /* border: 1px solid red; */
+}
+
+
+/* 12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation: shift-top .5s linear;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: shift-bottom .5s linear;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes shift-top  {
+    100% {
+        left: 50%;
+    }
+}
+
+@keyframes shift-bottom  {
+    100% {
+        right: 50%;
+    }
+}
+
+
+/* 13 */
+.ex-13-button:hover .ex-13-top-white {
+    animation: rotate-top 3s infinite linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: rotate-bottom 3s infinite linear;
+}
+
+@keyframes rotate-top  {
+    30% {
+        top: -20px;
+        left: 194px;
+        }
+
+    45% {
+        top: 63px;
+        left: 194px;
+    }
+
+    75%{
+        top: 63px;
+        left: -60px;
+    }
+
+    90% {
+        top: -20px;
+        left: -60px;
+    }
+}
+
+@keyframes rotate-bottom  {
+    30% {
+        bottom: -20px;
+        right: 194px;
+        }
+
+    45% {
+        bottom: 63px;
+        right: 194px;
+    }
+
+    75%{
+        bottom: 63px;
+        right: -60px;
+    }
+
+    90% {
+        bottom: -20px;
+        right: -60px;
+    }
 }
