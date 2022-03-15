@@ -74,30 +74,37 @@
     width: 500px;
 }
 
+
 /* 06 */
 .ex-6-img {
     transition: all;
 }
+
 .ex-6-img:hover {
     filter: grayscale(1);
 }
+
 
 /* 07 */
 .ex-7-img {
     transition: all 2s linear;
 }
+
 .ex-7-img:hover {
     filter: grayscale(1) invert(1);
 }
+
 
 /* 08 */
 .ex-8-img {
     transition: all 2s linear;
 }
+
 .ex-8-img:hover {
     filter: hue-rotate(90deg) blur(10px);
     border-radius: 2em;
 }
+
 
 /* 09 */
 .ex-9-img {
