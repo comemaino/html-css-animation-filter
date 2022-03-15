@@ -70,16 +70,54 @@
 }
 
 
-
-
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
 
+/* 06 */
+.ex-6-img {
+    transition: all;
+}
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+/* 07 */
+.ex-7-img {
+    transition: all 2s linear;
+}
+.ex-7-img:hover {
+    filter: grayscale(1) invert(1);
+}
+
+/* 08 */
+.ex-8-img {
+    transition: all 2s linear;
+}
+.ex-8-img:hover {
+    filter: hue-rotate(90deg) blur(10px);
+    border-radius: 2em;
+}
+
+/* 09 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+
+.ex-9-img {
+    transition: all 2s linear;
+}
+.ex-9-img:hover {
+    filter: contrast(25%) drop-shadow(0 0 20px red);
+    border-radius: 2em;
+    margin: 0;
+    width: 576px;
+}
+
+
+
+
 .ex-10-icon {
     font-size: 60px;
 }
